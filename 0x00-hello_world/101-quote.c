@@ -1,15 +1,12 @@
 #include <stdio.h>
-#include <errno.h>
-#include <string.h>
 
 /**
- * main - Prints and that piece of art is useful\" - Dora Korpar, 2015-10-19\n
+ * main - Entry point
  *
- * Return: 1 if successful
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	perror(message);
+	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
