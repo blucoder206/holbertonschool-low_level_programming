@@ -1,11 +1,15 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+
 /**
- * main - Prints message
- *Return: 0
+ * main - Prints and that piece of art is useful\" - Dora Korpar, 2015-10-19\n
+ *
+ * Return: 1 if successful
  */
 int main(void)
 {
-  write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-  return (1);
+	char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	perror(message);
+	return (1);
 }
