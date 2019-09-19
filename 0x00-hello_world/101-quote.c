@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - Prints message
- * Return: 0
+ *Return: 0
  */
 int main(void)
 {
