@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point
+ * positive
  *
- * aReturn: Always 0 (Success)
+ * Email: 1245@holbertonschool.com
  */
 int main(void)
 {
