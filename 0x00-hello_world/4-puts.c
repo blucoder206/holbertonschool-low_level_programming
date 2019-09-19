@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * 4-puts.c
+ * main - Entry point
  *
- * Function puts
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
