@@ -6,11 +6,12 @@
  */
 int main(void)
 {
-int number = 0;
-for (number == 0; number < 10; number++)
+int number;
+for (number = 0; number < 10; number++)
 {
 printf("%d", number);
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
+/**1245@holbertonschool.com**/
