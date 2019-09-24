@@ -6,8 +6,6 @@
 */
 void print_alphabet(void)
 {
-/** Way 1 **/
-
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
@@ -15,15 +13,4 @@ void print_alphabet(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-/** Way 2**/
-/**
-*	char c[] = "abcdefghijklmnopqrstuvwxyz";
-*	int var;
-*
-*	for (var = 0; var <= 25; var++)
-*	{
-*	_putchar(c[var]);
-*	}
-*	_putchar('\n');
-**/
 }
