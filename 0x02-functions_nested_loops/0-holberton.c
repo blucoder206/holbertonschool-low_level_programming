@@ -15,5 +15,3 @@ _putchar(c[var]);
 _putchar('\n');
 return (0);
 }
-
-
