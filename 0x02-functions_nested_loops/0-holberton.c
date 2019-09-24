@@ -8,7 +8,7 @@ int main(void)
 char c[] = "Holberton";
 int var;
 
-for (var = 0; var <= 9; var++)
+for (var = 0; var <= 8; var++)
 {
 _putchar(c[var]);
 }
