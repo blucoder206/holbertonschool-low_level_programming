@@ -20,3 +20,6 @@ int print_sign(int n);
 
 /** int_abs **/
 int _abs(int);
+
+/** print_last_digit **/
+int print_last_digit(int);
