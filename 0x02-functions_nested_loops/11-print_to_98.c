@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
-*
-*
-*
+*print_to_98 - This funcion will print the numbers until reach to 98
+*@n: The variable passed
+*Return: 0
 **/
 void print_to_98(int n)
 {
@@ -14,7 +14,7 @@ void print_to_98(int n)
 	{
 		while (n <= x)
 		{
-			printf("%d",n);
+			printf("%d", n);
 			if (n != x)
 			{
 				printf(", ");
@@ -29,7 +29,7 @@ void print_to_98(int n)
 	{
 		while (n >= x)
 		{
-		printf("%d",n);
+		printf("%d", n);
 		if (n != x)
 		{
 			printf(", ");
