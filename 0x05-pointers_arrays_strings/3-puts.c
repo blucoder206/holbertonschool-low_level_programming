@@ -3,7 +3,6 @@
 * _puts - This funcion will print a string
 * @str: char type pointer
 **/
-
 void _puts(char *str)
 {
 	int counter;
