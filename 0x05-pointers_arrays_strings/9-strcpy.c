@@ -3,7 +3,7 @@
 * _strcpy - This funcion will copy an pointer to other
 * @dest: destination
 * @src: source
-* Return - will return dest
+* Return: will return dest
 **/
 char *_strcpy(char *dest, char *src)
 {
