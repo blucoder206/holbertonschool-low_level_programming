@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  * puts_half - This funcion will print half of a string
  * @str: passing pointer
