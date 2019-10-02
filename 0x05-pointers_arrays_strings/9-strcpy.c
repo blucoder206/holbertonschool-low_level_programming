@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
 * _strcpy - This funcion will copy an pointer to other
 * @dest: destination
