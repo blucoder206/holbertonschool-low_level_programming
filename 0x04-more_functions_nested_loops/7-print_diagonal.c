@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-*
-*
-*
+* print_diagonal - This funcion will print \ n times
+* @n: times
+* Return: void
 **/
 void print_diagonal(int n)
 {
