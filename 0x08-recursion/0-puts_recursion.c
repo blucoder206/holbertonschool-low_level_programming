@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
 * _puts_recursion - This funcion will print a char recursively
-* @str: Passed variable
+* @s: Passed variable
 * Return: void
 **/
 void _puts_recursion(char *s)
