@@ -4,9 +4,9 @@
 *	 multiplies of 3 will print 'Fizz' instead multiplies of 5
 *	 will print 'Buzz' and if the number it's multiplies of 4 and
 *	 5 will print FizzBuzz
-* Return: void
+* Return: 0
 **/
-void main(void)
+int main(void)
 {
 	int numbers;
 
@@ -14,19 +14,28 @@ void main(void)
 	{
 		if (((numbers % 3) == 0) && (numbers % 5) == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if ((numbers % 3) == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if ((numbers % 5) == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", numbers);
+			printf("%d", numbers);
+		}
+		if (numbers == 100)
+		{
+			putchar(10);
+		}
+		else
+		{
+			putchar(32);
 		}
 	}
+	return (0);
 }
