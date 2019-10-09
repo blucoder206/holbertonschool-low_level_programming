@@ -4,11 +4,11 @@
 * @str: Passed variable
 * Return: void
 **/
-void _puts_recursion(char *str)
+void _puts_recursion(char *s)
 {
-	if (*str != '\0')
+	if (*s != '\0')
 	{
-		_putchar(*str);
+		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
 	else
