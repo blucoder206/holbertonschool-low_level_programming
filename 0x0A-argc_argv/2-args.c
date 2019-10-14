@@ -3,7 +3,7 @@
 * main - This program will prints all arguments it receives.
 * @argc: Argument count
 * @argv: Argument vector
-* Return: void
+* Return: 0
 **/
 int main(int argc, char *argv[])
 {
@@ -11,4 +11,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", *argv++);
 	}
+	return (0);
 }
