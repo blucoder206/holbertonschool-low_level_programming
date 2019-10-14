@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
 * main - Will print the name of the executable file
+* @argc: Argument count
+* @argv: Argument vector
 * Return: 0
 **/
 int main(int argc __attribute__((unused)), char *argv[])
