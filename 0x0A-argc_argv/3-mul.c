@@ -10,7 +10,7 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	int result;
 
-	if (argv[1] == '\0')
+	if (argv[1] == '\0' && argv[2] == '\0')
 	{
 		printf("Error\n");
 		return (1);
