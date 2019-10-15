@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+* main - Print the result of the multiplication, followed by a new line
+* @argc: Argument count
+* @argv: Argument vector
+* Return: 0 if succes, 1 error
+**/
+int main(int argc __attribute__((unused)), char *argv[])
+{
+	int result;
+
+	if (argv[1] == '\0')
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		result = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", result);
+		return (0);
+	}
+}
