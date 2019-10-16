@@ -21,7 +21,7 @@ int  _strlen(char *str)
 * @str: pointer char type
 * Return: String copied
 **/
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *a;
 	int m;
