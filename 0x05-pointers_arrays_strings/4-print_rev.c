@@ -2,7 +2,6 @@
 /**
  * print_rev - This funcion will reverse an string and print it
  * @s: string type pointer
- *
  **/
 void print_rev(char *s)
 {
