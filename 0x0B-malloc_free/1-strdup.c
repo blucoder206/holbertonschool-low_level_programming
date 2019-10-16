@@ -34,12 +34,12 @@ char *_strdup(char *str)
 	else
 	{
 		m = _strlen(str);
-		a = (char *)malloc(m * sizeof(char) + 1)
+		a = (char *)malloc(m * sizeof(char) + 1);
 		if (a == NULL)
 		{
 			return (0);
 		}
-		for (n = 0; str[n] != '\0' n++)
+		for (n = 0; str[n] != '\0'; n++)
 		{
 			a[n] = str[n];
 		}
