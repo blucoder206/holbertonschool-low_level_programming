@@ -22,7 +22,7 @@ int main(void)
 				putchar(32);
 			}
 			number2++;
-		}
+	}
 		number2 = 48;
 		number++;
 	}
