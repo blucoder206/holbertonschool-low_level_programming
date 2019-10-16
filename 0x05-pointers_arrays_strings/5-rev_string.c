@@ -2,24 +2,24 @@
 /**
  * rev_string - This funcion will reverse an string
  * @s: string
-  **/
+ **/
 void rev_string(char *s)
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 	char tmp;
 
-	while (s[i] != '\0')
+	for (i = 0; s[i] != 00; i++)
 	{
-	i++;
 	}
-	i--;
-	while (j <= i)
+
+	i = i-1;
+
+	for (j = 0; j <= i; j++)
 	{
-	tmp = s[j];
-	s[j] = s[i];
-	s[i] = tmp;
-	j++;
-	i--;
+		tmp = s[j];
+		s[j] = s[i];
+		s[i] = tmp;
+		i--;
 	}
 }
