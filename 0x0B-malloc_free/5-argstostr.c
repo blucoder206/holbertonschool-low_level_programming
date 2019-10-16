@@ -55,9 +55,9 @@ char *argstostr(int ac, char **av)
 
 	for (j = 0; j < ac; j++)
 	{
-		for (j = 0; av[j][j] != '\0'; j++)
+		for (k = 0; av[j][k] != '\0'; k++)
 		{
-			a[var] = av[j][j];
+			a[var] = av[j][k];
 			var++;
 		}
 
