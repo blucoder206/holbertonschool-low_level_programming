@@ -1,20 +1,20 @@
 #include "holberton.h"
 /**
-* puts2 - This funcion only will print the str content if is 0, 2, 4 ,6 or 8
-* @str: char-type pointer
+* puts2 - check if *str is a even number.
+* @str: - the string passed
+*
+* Return: nothing.
 **/
-
 void puts2(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (str[i] != '\0')
+	for (i = 0; (i < str[i]) != 00; i++)
 	{
-		if (i % 2 == 0)
+		if (str[i] % 2 == 0)
 		{
 			_putchar(str[i]);
 		}
-		i++;
 	}
-	_putchar('\n');
+	_putchar(10);
 }
