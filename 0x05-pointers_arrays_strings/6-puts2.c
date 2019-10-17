@@ -2,8 +2,6 @@
 /**
 * puts2 - check if *str is a even number.
 * @str: - the string passed
-*
-* Return: nothing.
 **/
 void puts2(char *str)
 {
