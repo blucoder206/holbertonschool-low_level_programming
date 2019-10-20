@@ -20,6 +20,5 @@ char *_strcat(char *dest, char *src)
 	{
 	dest[i + l] = src[l];
 	}
-	dest[i + l + 1] = 00;
 	return (dest);
 }
