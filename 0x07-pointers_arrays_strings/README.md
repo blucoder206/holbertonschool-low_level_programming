@@ -2,25 +2,25 @@
 
 ## Mandatory tasks
 
-* 0. memset 
+* memset 
 
-* 1. memcpy
+* memcpy
 
-* 2. strchr
+* strchr
 
-* 3. strspn 
+* strspn 
 
-* 4. strpbrk 
+* strpbrk 
 
-* 5. strstr
+* strstr
 
-* 6. Chess is mental torture
+* Chess is mental torture
 
-* 7. The line of life is a ragged diagonal between duty and desire
+* The line of life is a ragged diagonal between duty and desire
 
-* 8. Double pointer, double fun 
+* Double pointer, double fun 
 
 ## Advanced tasks
 
-* 9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
+* My primary goal of hacking was the intellectual curiosity, the seduction of adventure
 
