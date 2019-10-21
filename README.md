@@ -2,7 +2,7 @@
 
 ## Projects
 
-* 0x00-hello_world
+* [0x00-hello_world](https://github.com/blucoder206/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
 
 * 0x01-variables_if_else_while
 
