@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
 * *leet - encode an string into 1337
 * @s: string
@@ -7,29 +7,18 @@
 **/
 char *leet(char *s)
 {
-	int i;
+	int i, j;
+	char src[] = "aAeEoOlLtT";
+	char encode[] = "4433001177";
 
 	for (i = 0; s[i] != 00; i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		for (j = 0; src[j] != 00; j++)
 		{
-			s[i] = '4';
-		}
-		else if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		else if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		else if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		else if (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = '1';
+			if (s[i] == src[j])
+			{
+				s[i] = encode[j];
+			}
 		}
 	}
 	return (s);
