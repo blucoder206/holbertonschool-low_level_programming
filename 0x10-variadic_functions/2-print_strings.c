@@ -2,28 +2,28 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
-* print_numbers - prints numbers
-* @separator: separator of every number
+* print_strings - prints strings
+* @separator: separator of every string
 * @n: quantity of elements
 **/
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 
-	va_list numbers;
+	va_list string;
 
-	va_start(numbers, n);
+	va_start(string, n);
 
 	if (separator != NULL)
 	{
 		for (i = 0; i < n; i++)
 		{
-			printf("%d", va_arg(numbers, int));
+			printf("%s", va_arg(string, char *));
 			if (i != n - 1)
 			{
 				printf("%s", separator);
 			}
 		}
-		printf("\n");
 	}
+	printf("\n");
 }
