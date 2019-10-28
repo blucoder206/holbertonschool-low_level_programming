@@ -32,23 +32,25 @@ void print_all(const char * const format, ...)
 	va_list arg;
 
 	int i = 0;
-	int j = 0;
+	int j;
 	char *separator = "";
 
 	td elem[] = {
-			{"c", pchar},
-			{"i", pinteger},
-			{"f", pfloat},
-			{"s", pstring}
+			{'c', pchar},
+			{'i', pinteger},
+			{'f', pfloat},
+			{'s', pstring}
 	};
 
 	va_start(arg, format);
 
 	while (format && format [i])
 	{
+		j = 0;
+
 		while (elem[j].c)
 		{
-			if (format[i] == *(elem[j].c))
+			if (format[i] == (elem[j].c))
 			{
 				printf("%s", separator);
 				elem[j].f(arg);
