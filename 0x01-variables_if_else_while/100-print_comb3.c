@@ -18,11 +18,16 @@ int main(void)
 				putchar(j);
 				if (i != 57 || j != 57)
 				{
+					if (i == 56 && j == 57)
+					{
+						break;
+					}
 					putchar(44);
 					putchar(32);
 				}
 			}
 		}
 	}
+	putchar(10);
 	return (0);
 }
