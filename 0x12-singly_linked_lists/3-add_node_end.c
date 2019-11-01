@@ -25,44 +25,42 @@ int _strlen(const char *s)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *add_node, *tmp;
+	list_t *add_new, *tmp;
 
-	add_node = malloc(sizeof(list_t));
-
-	if (add_node == NULL)
+	add_new = malloc(sizeof(list_t));
+	if (add_new == NULL)
 	{
-		free(add_node);
+		free(add_new);
 		return (NULL);
 	}
 	if (*head == NULL)
 	{
-		*head = add_node;
+		*head = add_new;
 	}
 	else
 	{
 		tmp = *head;
-
 		while (tmp->next != NULL)
 		{
 			tmp = tmp->next;
 		}
-		tmp->next = add_node;
+		tmp->next = add_new;
 	}
 	if (str == NULL)
 	{
-		add_node->str = 0;
-		add_node->len = 0;
+		add_new->str = 0;
+		add_new->len = 0;
 	}
 	else
 	{
-		add_node->str = strdup(str);
-		if (add_node->str == 0)
+		add_new->str = strdup(str);
+		if (add_new->str == 0)
 		{
-			free(add_node);
+			free(add_new);
 			return (NULL);
 		}
-		add_node->len = _strlen(str);
+		add_new->len = _strlen(str);
 	}
-	add_node->next = NULL;
-	return (NULL);
+	add_new->next = NULL;
+	return (add_new);
 }
