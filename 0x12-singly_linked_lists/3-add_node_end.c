@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * _strlen - get length of an string
  * @s: passed string
@@ -14,6 +15,7 @@ int _strlen(const char *s)
 
 	return (i);
 }
+
 /**
  * add_node_end - add a node at the end
  * @head: head of node
