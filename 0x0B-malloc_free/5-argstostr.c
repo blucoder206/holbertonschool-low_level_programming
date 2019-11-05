@@ -1,22 +1,20 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
-* _strlen - check the length of a string
-* @str: pointer type char
-* Return: The program will return the length of a string
-**/
-int  _strlen(char *str)
+ * _strlen - Get the length of an string
+ * @s: string
+ * Return: length of s
+ */
+int _strlen(char *s)
 {
 	int i;
 
-	for (i = 0; str[i] != 00; i++)
+	for (i = 0; s[i] != 00; i++)
 	{
 	}
 	return (i);
 }
-
 /**
  * argstostr - this funcion will concatenates all the arguments
  * @ac: number of arguments
@@ -25,9 +23,9 @@ int  _strlen(char *str)
  */
 char *argstostr(int ac, char **av)
 {
-	char *a;
-	int c;
+	char *ptr;
 	int var;
+	int c;
 	int j;
 	int k;
 
@@ -36,18 +34,15 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	var = 0;
-
 	for (c = 0; c < ac; c++)
 	{
-		var = var +  _strlen(av[c]);
+		var = var + _strlen(av[c] + 1);
 	}
 
-	a = malloc((var + ac) * sizeof(char));
-	if (a == NULL)
+	ptr = malloc((var + ac) * sizeof(char));
+	if (ptr == NULL)
 	{
-		free(a);
-
+		free(ptr);
 		return (NULL);
 	}
 
@@ -57,13 +52,12 @@ char *argstostr(int ac, char **av)
 	{
 		for (k = 0; av[j][k] != '\0'; k++)
 		{
-			a[var] = av[j][k];
+			ptr[var] = av[j][k];
 			var++;
 		}
 
-		a[var] = '\n';
+		ptr[var] = '\n';
 		var++;
 	}
-	return (a);
-	
+	return (ptr);
 }
