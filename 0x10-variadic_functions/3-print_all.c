@@ -1,21 +1,32 @@
 #include "variadic_functions.h"
 /**
-*
-*
-*
-**/
+ * pchar - prints char
+ * @arg: char to print
+ */
 void pchar(va_list arg)
 {
 	printf("%c", va_arg(arg, int));
 }
+/**
+ * pinteger - prints integer
+ * @arg: integer to print
+ */
 void pinteger(va_list arg)
 {
 	printf("%d", va_arg(arg, int));
 }
+/**
+ * pfloat - prints float
+ * @arg: float to print
+ */
 void pfloat(va_list arg)
 {
 	printf("%f", va_arg(arg, double));
 }
+/**
+ * pstring - prints an string
+ * @arg: string to string
+ */
 void pstring(va_list arg)
 {
 	char *nostring = va_arg(arg, char *);
@@ -27,6 +38,10 @@ void pstring(va_list arg)
 	}
 	printf("%s", nostring);
 }
+/**
+ * print_all - prints all
+ * @format: format of data
+ */
 void print_all(const char * const format, ...)
 {
 	va_list arg;
@@ -44,7 +59,7 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 
-	while (format && format [i])
+	while (format && format[i])
 	{
 		j = 0;
 
