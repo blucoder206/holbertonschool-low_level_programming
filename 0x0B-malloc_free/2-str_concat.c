@@ -10,9 +10,8 @@ int  _strlen(char *str)
 {
 	int i;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != 00; i++)
 	{
-		i++;
 	}
 	return (i);
 }
@@ -20,12 +19,12 @@ int  _strlen(char *str)
 * str_concat - This funcion will concatenate two strings
 * @s1: String 1
 * @s2: String 2
-* Return: Result of concatenate s1 & s2
+* Return: Result of concatenate s1, s2 and null terminated
 **/
 char *str_concat(char *s1, char *s2)
 {
-	char *a;
-	int var1, var2, m, i, o;
+	char *ptr;
+	int len_s1, len_s2, m, i, o;
 
 	if (s1 == NULL)
 	{
@@ -36,22 +35,22 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	var1 = _strlen(s1);
-	var2 = _strlen(s2);
-	a = malloc(((var1) + (var2) + 1) * sizeof(char));
+	len_s1 = _strlen(s1);
+	len_s2 = _strlen(s2);
+	ptr = malloc(((len_s1) + (len_s2) + 1) * sizeof(char));
 
-	if (a == NULL)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	for (m = 0; m < var1; m++)
+	for (m = 0; m < len_s1; m++)
 	{
-		a[m] = s1[m];
+		ptr[m] = s1[m];
 	}
-	for (i = var1, o = 0; o <= var2; i++, o++)
+	for (i = len_s1, o = 0; o <= len_s2; i++, o++)
 	{
-		a[i] = s2[o];
+		ptr[i] = s2[o];
 	}
-	return (a);
+	return (ptr);
 }
