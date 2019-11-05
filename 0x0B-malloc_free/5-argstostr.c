@@ -24,10 +24,7 @@ int _strlen(char *s)
 char *argstostr(int ac, char **av)
 {
 	char *ptr;
-	int var;
-	int c;
-	int j;
-	int k;
+	int var, c, j, k;
 
 	if (ac == 0 || av == NULL)
 	{
@@ -36,10 +33,10 @@ char *argstostr(int ac, char **av)
 
 	for (c = 0; c < ac; c++)
 	{
-		var = var + _strlen(av[c] + 1);
+		var = var + _strlen(av[c]);
 	}
 
-	ptr = malloc((var + ac) * sizeof(char));
+	ptr = malloc((var + ac + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
 		free(ptr);
