@@ -42,7 +42,8 @@ char *argstostr(int ac, char **av)
 	{
 		var = var +  _strlen(av[c]);
 	}
-	a = malloc((var +  1) * sizeof(char));
+
+	a = malloc((var + ac) * sizeof(char));
 	if (a == NULL)
 	{
 		free(a);
@@ -64,4 +65,5 @@ char *argstostr(int ac, char **av)
 		var++;
 	}
 	return (a);
+	
 }
