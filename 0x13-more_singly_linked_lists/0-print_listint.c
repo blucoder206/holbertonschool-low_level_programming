@@ -8,14 +8,10 @@ size_t print_listint(const listint_t *h)
 {
 	int back;
 
-	if (h == NULL)
-	{
-		return (0);
-	}
-	else
+	for (back = 0; h != NULL; back++)
 	{
 		printf("%d\n", h->n);
-		back = 1 + print_listint(h->next);
-		return (back);
+		h = h->next;
 	}
+	return (back);
 }
