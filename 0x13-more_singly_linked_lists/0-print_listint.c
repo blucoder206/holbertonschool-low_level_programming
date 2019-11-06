@@ -6,7 +6,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int back;
+	size_t back;
 
 	for (back = 0; h != NULL; back++)
 	{
