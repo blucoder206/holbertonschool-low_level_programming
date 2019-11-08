@@ -9,7 +9,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int cllbck = 0, ld, j;
 	int i = 0;
 
-	if (b == 0)
+	if (b == NULL)
 	{
 		return (0);
 	}
