@@ -9,11 +9,11 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int cllbck = 0, ld, j;
 	int i = 0;
 
-	if (b == NULL)
+	if (b == 0)
 	{
 		return (0);
 	}
-	for (i = 0; b[i] != 00; i++)
+	for (i = 0; b[i] != 0; i++)
 	{
 		if (b[i] != '0' && b[i] != '1')
 		{
