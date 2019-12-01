@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * binary_to_unit - convert a binary to decimal
+ * binary_to_uint - convert a binary to decimal
  * @b: binary number as string
  * Return: Decimal equivalent of *b
  */
