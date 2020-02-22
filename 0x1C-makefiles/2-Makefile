@@ -1,5 +1,5 @@
 CC=gcc
-SRC=main.c holberton.c
+SRC=OBJ=$(SRC:%.c=%.o)
 OBJ=main.o holberton.o
 NAME=holberton
 all: $(OBJ)
